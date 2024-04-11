@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9); /* Adjust opacity here */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  z-index: 1; /* Ensure content appears above the video overlay */
+}
+
+.container h1 {
+  font-size: 60px;
+  font-weight: 600;
+  letter-spacing: 8px;
+}
+
+.container p {
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 550px;
+}
+
+.container .time-content {
+  display: flex;
+  column-gap: 30px;
+  margin-top: 20px;
+}
+
+.time-content .time {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.time .number,
+.time .text {
+  font-weight: 500;
+}
+
+.time .number {
+  font-size: 40px;
+}
+
+.time .text {
+  text-transform: capitalize;
+  font-size: 12px;
+}
