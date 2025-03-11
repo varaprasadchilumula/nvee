@@ -1,0 +1,26 @@
+$primary-color: #007bff;
+$text-color: #333;
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+#hero {
+    background: url('../images/hero-bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+
+.btn-primary {
+    background: $primary-color;
+    border: none;
+    &:hover {
+        background: darken($primary-color, 10%);
+    }
+}
+
+footer {
+    background: black;
+    color: white;
+}
